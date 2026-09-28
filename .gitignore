@@ -1,0 +1,27 @@
+# simulator-generated / machine-local
+work/
+*.wlf
+*.vcd
+*.mpf
+*.cr.mti
+transcript
+*.sv.bak
+*.log
+!Equivalence_checking/*.log        # keep the LEC logs as evidence once complete -- see note above
+
+# licensed PDK / standard-cell library content -- do not redistribute
+lib/*.lib
+lib/*.v
+lef/*.lef
+captable/*.capTbl
+QRC_Tech/*.tch
+lib/desktop.ini
+lef/desktop.ini
+captable/desktop.ini
+"lib/slow_vdd1v0_basiccells(1).v"
+
+# EDA tool scratch / regenerable intermediate data
+synthesis/.genus.log*.swp
+synthesis/.rs_*.tstamp
+synthesis/fv/
+Equivalence_checking/*_db/
